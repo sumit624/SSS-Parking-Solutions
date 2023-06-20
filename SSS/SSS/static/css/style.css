@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: black;
+    /* border: 2px solid black; */
+}
+
+.navleft{
+    display: flex;
+}
+
+.navleft li{
+    margin: 12px 18px;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navleft li a:hover{
+    color: rgb(171, 103, 234);
+}
+
+.navleft li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.838);
+}
+
+.navright{
+    display: flex;
+    margin-left: 300px;
+}   
+
+.navright li{
+    margin-left: 15px;
+}
+
+.navright a{
+    background-color: rgb(158, 73, 237);
+    text-decoration: none;
+    height: 24px;
+    color: black;
+    border: 2px solid black;
+}
+
+.navright input{
+    height: 28px;
+}
+
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    margin: -15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.slider{
+    position: relative;
+    width: 80%;
+    height: 65vh;
+    background-image: url("static/img/1.jpg");
+    /* z-index: -1; */
+    /* opacity: 75%; */
+    background-size: 100% 100%;
+    border: 2px solid black;
+    animation: changeimg 10s infinite;
+}
+
+.login{
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: rgb(220, 193, 245);
+    margin: 50px 24px;
+    padding: 20px 5px;
+}
+
+.login input{
+    margin: 10px 10px;
+}
+
+@keyframes changeimg {
+    0%{
+        background-image: url(/static/img/1.jpg);
+    }
+
+    50%{
+        background-image: url(/static/img/2.jpg);
+    }
+
+    100%{
+        background-image: url(/static/img/3.jpg);
+    }
+}
+
+.container2{
+
+    height: 100vh;
+    width: 100%;
+}
+
+.container2 span{
+    font-size: 30px;
+    margin: 0px 103px;
+}
+
+
+.boxes{
+    margin: 50px 200px;
+    display: flex;
+    /* align-items: space-between; */
+    justify-content: space-around;
+}
+
+.box1{
+    border: 2px solid black;
+    height: 25vh;
+    width: 40%;
+    background-image: url(/static/img/4.jpg);
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in;
+}
+
+.box1:hover{
+    width: 43%;
+    height: 27vh;
+}
+
+.box2{
+    border: 2px solid black;
+    height: 25vh;
+    width: 40%;
+    background-image: url(/static/img/6.jpg);
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in;
+}
+
+.box2:hover{
+    width: 43%;
+    height: 27vh;
+}
+
+.box3{
+    border: 2px solid black;
+    height: 25vh;
+    width: 40%;
+    background-image: url(/static/img/7.jfif);
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in;
+}
+
+.box3:hover{
+    width: 43%;
+    height: 27vh;
+}
+
+.boxes2{
+    margin: 50px 200px;
+    display: flex;
+    /* align-items: space-between; */
+    justify-content: space-around;
+}
+
+.box4{
+    border: 2px solid black;
+    height: 25vh;
+    width: 40%;
+    background-image: url(/static/img/8.png);
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in;
+}
+
+.box4:hover{
+    width: 43%;
+    height: 27vh;
+}
+
+.footer{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.footer a{
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+/* Book css */
+
+.contain{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.forcar{
+    text-decoration: none;
+    border: 1px solid black;
+    height: 50vh;
+    width: 30%;
+    background-image: url(/static/img/9.jpg);
+    background-size: 100% 100%;
+}
+
+.forbike{
+    text-decoration: none;
+    border: 1px solid black;
+    height: 50vh;
+    width: 30%;
+    background-image: url(/static/img/10.jpg);
+    background-size: 100% 100%;
+}
+
+.forcar span{
+    font-size: 22px;
+}
+
+.forbike span{
+    font-size: 22px;
+}
+
+
+/* loaction css */
+
+.location_container{
+    margin-top: -50px;
+    height:82vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lbox1{
+    border: 1px solid black;
+    height: 25vh;
+    width: 18%;
+    text-decoration: none;
+}
+
+
+
+
+/* form css */
+
+.bookForm{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 100px 190px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 8px 8px 4px 3px black;
+    font-weight: bold;
+    height: 120vv;
+    width: 60%;
+    background-image: url(/static/img/bg.jpg)
+}
+
+.bookForm label{
+    margin: 10px 50px;
+}
+
+.bookForm input{
+    margin: 20px 30px;
+    height: 20px;
+    width: 300px;
+}
+
+
+.btn{
+    background-color: black;
+    color: antiquewhite;
+    height: 40px;
+    width: 200px;
+}
+
+
+
+/* trays classes */
+
+.traes{
+    /* position: relative; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tbox{
+    /* position: absolute;/ */
+    border: 1px solid black;
+    height: 25vh;
+    width: 18%;
+}
+
+
+
+
+/* tempelate classes */
+.center{
+    margin-top: 20px;
+    text-align: center;
+}

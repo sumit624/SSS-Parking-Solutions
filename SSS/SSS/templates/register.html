@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form class="bookForm" method="post" action="{% url 'savedata' %}">
+        {% csrf_token %}
+        <label for="name">Owner Name : &#160;&#160;&#160;&#160;
+            
+        </label>
+        <input type="text" name="name"><br>
+
+        <label for="name">Vehicle Number :</label>
+        <input type="text" name="vehicle"><br>
+
+        <label for="name">Licence Number :</label>
+        <input type="text" name="license">
+
+        <label for="name">Aadhar Number :</label>
+        <input type="text" name="aadhar">
+
+        <label for="name">Car Model : &#160;&#160;&#160;&#160;&#160;&#160;&#160;</label>
+        <input type="text" name="model"><br>
+
+        <label for="name">Email_id : &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</label>
+        <input type="text" name="email">
+
+        <label for="name">Set Password :&#160;&#160;&#160;</label>
+        <input type="text" name="password">
+
+        <button class="btn">Submit</button>
+    </form>
+
+
+</body>
+</html>
+{% endblock content %}

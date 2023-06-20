@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="container1">
+            <div class="slider">
+                
+                <form class="login" method='post' action="{% url 'verify' %}">
+                    
+                    {% csrf_token %}
+                    <h3 class="center">Login</h3>
+                    <input type="text" name="loginemail" placeholder="Email">
+                    <input type="text" name="loginpass" placeholder="Password"><br>
+                    <input type="submit" placeholder="Login">
+                    
+                </form>
+            </div>
+        </div>
+
+        <div class="container2">
+            <span>Key Benefits</span>
+            <div class="boxes">
+                <div class="box1">
+                    Save Time in Parking
+                </div>
+
+                <div class="box2">
+                    Easy Parking
+                </div><br>
+                
+            </div>
+
+            <div class="boxes2">
+                <div class="box3">
+                    xyz
+                </div>
+
+                <div class="box4">
+                    abc
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+{% endblock content %}

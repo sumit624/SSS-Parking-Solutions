@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS Parking Solutions</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://kit.fontawesome.com/1e3b486191.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navleft">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'book' %}">Book Slot</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+
+        <div class="navright">
+            <a href="{% url 'register' %}">Register</a>
+            <li><input type="search" placeholder="Search here"></li>
+        </div>
+    </div>
